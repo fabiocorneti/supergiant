@@ -30,6 +30,12 @@ func (p *Provider) CreateKube(m *model.Kube, action *core.Action) error {
 		Action: action,
 	}
 
+	// mock a fake ssh key if the user does not enter one. CoreOS may barf if we don't.
+	// Don't worry. This key is a example key used in github doc.
+	if m.AWSConfig.SSHPubKey == "" {
+		m.AWSConfig.SSHPubKey = "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAklOUpkDHrfHY17SbrmTIpNLTGK9Tjom/BWDSUGPl+nafzlHDTYW7hdI4yZ5ew18JH4JW9jbhUFrviQzM7xlELEVf4h9lFX5QVkbPppSwg0cda3Pbv7kOdJ/MTyBlWXFCR+HAo3FXRitBqxiX1nKhXpHAZsMciLq8V6RjsNAQwdsdMFvSlVK/7XAt3FaoJoAsncM1Q9x5+3V0Ww68/eIFmb1zuUFljQJKprrX88XypNDvjYNby6vw/Pb0rwert/EnmZ+AW4OZPnTPI89ZPmVMLuayrD2cE86Z/il8b+gw3r3+1nKatmIkjn2so1d01QraTlMqVSsbxNrRFi9wrf+M7Q== schacon@mylaptop.local"
+	}
+
 	// Init our AZ setup
 	// If zone configurtion is empty, the user did not pre-configure, so we need to set it up.
 	if len(m.AWSConfig.PublicSubnetIPRange) == 0 && m.AWSConfig.MultiAZ {
@@ -65,6 +71,8 @@ func (p *Provider) CreateKube(m *model.Kube, action *core.Action) error {
 			m.AWSConfig.PublicSubnetIPRange = append(m.AWSConfig.PublicSubnetIPRange, subnetObj)
 		}
 	}
+
+	m.AWSConfig.AvailabilityZone = m.AWSConfig.PublicSubnetIPRange[0]["zone"]
 
 	err := p.Core.DB.Save(m)
 	if err != nil {

@@ -7,13 +7,10 @@
 // config/providers/digitalocean/minion.yaml
 // config/providers/openstack/master.yaml
 // config/providers/openstack/minion.yaml
-// ui/assets/.DS_Store
 // ui/assets/css/main.css
-// ui/assets/fonts/.DS_Store
 // ui/assets/fonts/Montserrat-Regular.ttf
 // ui/assets/fonts/OpenSans-Regular.ttf
 // ui/assets/fonts/OpenSans-Semibold.ttf
-// ui/assets/img/.DS_Store
 // ui/assets/img/dropdown-caret.svg
 // ui/assets/img/favicon.ico
 // ui/assets/img/magnifier.svg
@@ -114,7 +111,7 @@ func configProvidersAwsBootstrapYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "config/providers/aws/bootstrap.yaml", size: 1692, mode: os.FileMode(420), modTime: time.Unix(1480098868, 0)}
+	info := bindataFileInfo{name: "config/providers/aws/bootstrap.yaml", size: 1692, mode: os.FileMode(420), modTime: time.Unix(1479142895, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -134,7 +131,7 @@ func configProvidersAwsMasterYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "config/providers/aws/master.yaml", size: 24278, mode: os.FileMode(420), modTime: time.Unix(1480098868, 0)}
+	info := bindataFileInfo{name: "config/providers/aws/master.yaml", size: 24278, mode: os.FileMode(420), modTime: time.Unix(1479142895, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -154,7 +151,7 @@ func configProvidersAwsMinionYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "config/providers/aws/minion.yaml", size: 5909, mode: os.FileMode(420), modTime: time.Unix(1480098868, 0)}
+	info := bindataFileInfo{name: "config/providers/aws/minion.yaml", size: 5909, mode: os.FileMode(420), modTime: time.Unix(1479142895, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -174,7 +171,7 @@ func configProvidersDigitaloceanMasterYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "config/providers/digitalocean/master.yaml", size: 23616, mode: os.FileMode(420), modTime: time.Unix(1475100938, 0)}
+	info := bindataFileInfo{name: "config/providers/digitalocean/master.yaml", size: 23616, mode: os.FileMode(420), modTime: time.Unix(1475784562, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -194,7 +191,7 @@ func configProvidersDigitaloceanMinionYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "config/providers/digitalocean/minion.yaml", size: 10685, mode: os.FileMode(420), modTime: time.Unix(1474249732, 0)}
+	info := bindataFileInfo{name: "config/providers/digitalocean/minion.yaml", size: 10685, mode: os.FileMode(420), modTime: time.Unix(1475784562, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -214,7 +211,7 @@ func configProvidersOpenstackMasterYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "config/providers/openstack/master.yaml", size: 24516, mode: os.FileMode(420), modTime: time.Unix(1476825251, 0)}
+	info := bindataFileInfo{name: "config/providers/openstack/master.yaml", size: 24516, mode: os.FileMode(420), modTime: time.Unix(1476898810, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -234,27 +231,7 @@ func configProvidersOpenstackMinionYaml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "config/providers/openstack/minion.yaml", size: 6399, mode: os.FileMode(420), modTime: time.Unix(1476825251, 0)}
-	a := &asset{bytes: bytes, info: info}
-	return a, nil
-}
-
-var _uiAssetsDs_store = []byte("\x1f\x8b\x08\x00\x00\x09\x6e\x88\x00\xff\xec\x98\x31\x6a\x03\x31\x10\x45\xff\xc8\x2a\x04\x69\x54\xa6\xd4\x15\x7c\x03\x61\x14\x48\xef\x3e\x04\xbc\xe0\x04\xb2\xd8\x45\xdc\x6f\x97\x43\xe4\x5a\x39\x50\x10\xfa\x90\x0d\x6b\x35\x81\x10\xc7\xfc\x07\xcb\x2b\x46\x33\x2b\xb6\xd0\xce\x08\x80\x6d\x4e\xc3\x1a\x88\x00\x02\x9a\xf1\x86\xb3\x04\x3e\x0b\x1c\xed\x6b\xbd\x5a\x63\xbd\xdd\x1d\xc6\xe3\xf9\x2a\x1d\x6a\xee\x0a\xcf\x18\xb1\x7f\xd9\x2f\xf2\x19\x19\x0f\xa5\x0c\xa7\xd7\x1d\xf0\xf1\x70\xff\xfe\x3d\x32\x74\x22\xc7\xa7\x1f\xec\x46\x08\x21\x84\xb8\x7e\xac\x29\xdc\xfc\xf5\x46\x84\x10\x17\x47\x3d\x1f\x12\x9d\xe9\xa9\xd9\x18\x77\xb4\x9f\xe5\x44\x3a\xd1\x99\x9e\x9a\x8d\xeb\x1c\xed\xe9\x40\x47\x3a\xd1\x99\x9e\x9a\x79\x68\x19\x87\x0f\xe3\x9b\x8d\x13\x8a\x45\x3a\xd1\xf9\x77\xbe\x8d\x10\xff\x9d\x55\x53\xac\xff\xff\xbb\xfe\xfc\x2f\x84\xb8\x62\xcc\x97\x6d\xd9\x7c\x0d\x04\x0b\x1c\x1b\x81\xc7\x79\x52\xa7\x09\x70\xed\xb2\xf0\x76\xb6\x4e\x8d\x80\x10\x17\xc6\x67\x00\x00\x00\xff\xff\x1b\x32\x2f\x98\x04\x18\x00\x00")
-
-func uiAssetsDs_storeBytes() ([]byte, error) {
-	return bindataRead(
-		_uiAssetsDs_store,
-		"ui/assets/.DS_Store",
-	)
-}
-
-func uiAssetsDs_store() (*asset, error) {
-	bytes, err := uiAssetsDs_storeBytes()
-	if err != nil {
-		return nil, err
-	}
-
-	info := bindataFileInfo{name: "ui/assets/.DS_Store", size: 6148, mode: os.FileMode(420), modTime: time.Unix(1480103985, 0)}
+	info := bindataFileInfo{name: "config/providers/openstack/minion.yaml", size: 6399, mode: os.FileMode(420), modTime: time.Unix(1476898810, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -274,27 +251,7 @@ func uiAssetsCssMainCss() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "ui/assets/css/main.css", size: 12562, mode: os.FileMode(420), modTime: time.Unix(1480289120, 0)}
-	a := &asset{bytes: bytes, info: info}
-	return a, nil
-}
-
-var _uiAssetsFontsDs_store = []byte("\x1f\x8b\x08\x00\x00\x09\x6e\x88\x00\xff\xec\xd8\x31\x0a\x02\x31\x10\x85\xe1\x37\x31\x45\xc0\x26\xa5\x65\x1a\x0f\xe0\x0d\xc2\xb2\x9e\xc0\x0b\x58\x78\x05\xfb\x1c\x5d\x96\x79\x60\x60\xd5\x4e\x8c\xcb\xfb\x40\xfe\x05\x37\x2a\x16\x31\x23\x00\x9b\xee\xb7\x13\x90\x01\x24\x78\x71\xc4\x4b\x89\x8f\x95\xd0\x5d\x1b\x5f\x43\x44\x44\x44\xc6\x66\x9e\xb4\xff\xf5\x07\x11\x91\xe1\x2c\xfb\x43\x61\x2b\xdb\xbc\xc6\xe7\x03\x1b\xbb\x35\x99\x2d\x6c\x65\x9b\xd7\x78\x5f\x60\x23\x9b\xd8\xcc\x16\xb6\xb2\xcd\xcb\x4d\xcb\x38\x7c\x18\xdf\xd9\x38\xa1\x18\xa7\x10\x2b\x6c\xfd\xce\x77\x23\xf2\xef\x76\x9e\xbc\xfc\xfe\x9f\xdf\xcf\xff\x22\xb2\x61\x16\xe7\xcb\x3c\x3d\x07\x82\xf5\x0d\x00\xae\xdd\xf5\xa7\x43\x40\xf0\x3f\x0b\x0f\xdd\x5a\x1d\x04\x44\x06\xf3\x08\x00\x00\xff\xff\x6a\x00\x88\x6d\x04\x18\x00\x00")
-
-func uiAssetsFontsDs_storeBytes() ([]byte, error) {
-	return bindataRead(
-		_uiAssetsFontsDs_store,
-		"ui/assets/fonts/.DS_Store",
-	)
-}
-
-func uiAssetsFontsDs_store() (*asset, error) {
-	bytes, err := uiAssetsFontsDs_storeBytes()
-	if err != nil {
-		return nil, err
-	}
-
-	info := bindataFileInfo{name: "ui/assets/fonts/.DS_Store", size: 6148, mode: os.FileMode(420), modTime: time.Unix(1480101745, 0)}
+	info := bindataFileInfo{name: "ui/assets/css/main.css", size: 12562, mode: os.FileMode(420), modTime: time.Unix(1481222475, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -314,7 +271,7 @@ func uiAssetsFontsMontserratRegularTtf() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "ui/assets/fonts/Montserrat-Regular.ttf", size: 29016, mode: os.FileMode(493), modTime: time.Unix(1323759600, 0)}
+	info := bindataFileInfo{name: "ui/assets/fonts/Montserrat-Regular.ttf", size: 29016, mode: os.FileMode(493), modTime: time.Unix(1481222475, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -334,7 +291,7 @@ func uiAssetsFontsOpensansRegularTtf() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "ui/assets/fonts/OpenSans-Regular.ttf", size: 217360, mode: os.FileMode(493), modTime: time.Unix(1382294236, 0)}
+	info := bindataFileInfo{name: "ui/assets/fonts/OpenSans-Regular.ttf", size: 217360, mode: os.FileMode(493), modTime: time.Unix(1481222475, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -354,27 +311,7 @@ func uiAssetsFontsOpensansSemiboldTtf() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "ui/assets/fonts/OpenSans-Semibold.ttf", size: 221328, mode: os.FileMode(493), modTime: time.Unix(1296633600, 0)}
-	a := &asset{bytes: bytes, info: info}
-	return a, nil
-}
-
-var _uiAssetsImgDs_store = []byte("\x1f\x8b\x08\x00\x00\x09\x6e\x88\x00\xff\xec\xd8\x31\x0a\x02\x31\x10\x85\xe1\x37\x31\x45\xc0\x26\xa5\x65\x1a\x0f\xe0\x0d\xc2\xb2\x9e\xc0\x0b\x58\x78\x05\xfb\x1c\x5d\x96\x79\x60\x60\xd5\x4e\x8c\xcb\xfb\x40\xfe\x05\x37\x2a\x16\x31\x23\x00\x9b\xee\xb7\x13\x90\x01\x24\x78\x71\xc4\x4b\x89\x8f\x95\xd0\x5d\x1b\x5f\x43\x44\x44\x44\xc6\x66\x9e\xb4\xff\xf5\x07\x11\x91\xe1\x2c\xfb\x43\x61\x2b\xdb\xbc\xc6\xe7\x03\x1b\xbb\x35\x99\x2d\x6c\x65\x9b\xd7\x78\x5f\x60\x23\x9b\xd8\xcc\x16\xb6\xb2\xcd\xcb\x4d\xcb\x38\x7c\x18\xdf\xd9\x38\xa1\x18\xa7\x10\x2b\x6c\xfd\xce\x77\x23\xf2\xef\x76\x9e\xbc\xfc\xfe\x9f\xdf\xcf\xff\x22\xb2\x61\x16\xe7\xcb\x3c\x3d\x07\x82\xf5\x0d\x00\xae\xdd\xf5\xa7\x43\x40\xf0\x3f\x0b\x0f\xdd\x5a\x1d\x04\x44\x06\xf3\x08\x00\x00\xff\xff\x6a\x00\x88\x6d\x04\x18\x00\x00")
-
-func uiAssetsImgDs_storeBytes() ([]byte, error) {
-	return bindataRead(
-		_uiAssetsImgDs_store,
-		"ui/assets/img/.DS_Store",
-	)
-}
-
-func uiAssetsImgDs_store() (*asset, error) {
-	bytes, err := uiAssetsImgDs_storeBytes()
-	if err != nil {
-		return nil, err
-	}
-
-	info := bindataFileInfo{name: "ui/assets/img/.DS_Store", size: 6148, mode: os.FileMode(420), modTime: time.Unix(1480281170, 0)}
+	info := bindataFileInfo{name: "ui/assets/fonts/OpenSans-Semibold.ttf", size: 221328, mode: os.FileMode(493), modTime: time.Unix(1481222475, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -394,7 +331,7 @@ func uiAssetsImgDropdownCaretSvg() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "ui/assets/img/dropdown-caret.svg", size: 582, mode: os.FileMode(420), modTime: time.Unix(1480138743, 0)}
+	info := bindataFileInfo{name: "ui/assets/img/dropdown-caret.svg", size: 582, mode: os.FileMode(420), modTime: time.Unix(1481222475, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -414,7 +351,7 @@ func uiAssetsImgFaviconIco() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "ui/assets/img/favicon.ico", size: 5430, mode: os.FileMode(420), modTime: time.Unix(1480281150, 0)}
+	info := bindataFileInfo{name: "ui/assets/img/favicon.ico", size: 5430, mode: os.FileMode(420), modTime: time.Unix(1481222475, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -434,7 +371,7 @@ func uiAssetsImgMagnifierSvg() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "ui/assets/img/magnifier.svg", size: 817, mode: os.FileMode(420), modTime: time.Unix(1480141848, 0)}
+	info := bindataFileInfo{name: "ui/assets/img/magnifier.svg", size: 817, mode: os.FileMode(420), modTime: time.Unix(1481222475, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -454,7 +391,7 @@ func uiAssetsImgSupergiantSvg() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "ui/assets/img/supergiant.svg", size: 6046, mode: os.FileMode(420), modTime: time.Unix(1480103925, 0)}
+	info := bindataFileInfo{name: "ui/assets/img/supergiant.svg", size: 6046, mode: os.FileMode(420), modTime: time.Unix(1481222475, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -474,7 +411,7 @@ func uiAssetsJsDropdownJs() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "ui/assets/js/dropdown.js", size: 400, mode: os.FileMode(420), modTime: time.Unix(1480185939, 0)}
+	info := bindataFileInfo{name: "ui/assets/js/dropdown.js", size: 400, mode: os.FileMode(420), modTime: time.Unix(1481222475, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -494,7 +431,7 @@ func uiAssetsJsIndexJs() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "ui/assets/js/index.js", size: 15145, mode: os.FileMode(420), modTime: time.Unix(1480293267, 0)}
+	info := bindataFileInfo{name: "ui/assets/js/index.js", size: 15145, mode: os.FileMode(420), modTime: time.Unix(1481222475, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -514,7 +451,7 @@ func uiAssetsJsMainJs() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "ui/assets/js/main.js", size: 318, mode: os.FileMode(420), modTime: time.Unix(1475100938, 0)}
+	info := bindataFileInfo{name: "ui/assets/js/main.js", size: 318, mode: os.FileMode(420), modTime: time.Unix(1475784562, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -534,7 +471,7 @@ func uiAssetsJsModalJs() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "ui/assets/js/modal.js", size: 370, mode: os.FileMode(420), modTime: time.Unix(1480117140, 0)}
+	info := bindataFileInfo{name: "ui/assets/js/modal.js", size: 370, mode: os.FileMode(420), modTime: time.Unix(1481222475, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -554,7 +491,7 @@ func uiAssetsJsResource_graphsJs() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "ui/assets/js/resource_graphs.js", size: 5165, mode: os.FileMode(420), modTime: time.Unix(1480101713, 0)}
+	info := bindataFileInfo{name: "ui/assets/js/resource_graphs.js", size: 5165, mode: os.FileMode(420), modTime: time.Unix(1481222475, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -574,7 +511,7 @@ func uiAssetsJsVendorD3V4MinJs() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "ui/assets/js/vendor/d3.v4.min.js", size: 212385, mode: os.FileMode(420), modTime: time.Unix(1475109121, 0)}
+	info := bindataFileInfo{name: "ui/assets/js/vendor/d3.v4.min.js", size: 212385, mode: os.FileMode(420), modTime: time.Unix(1475784562, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -594,7 +531,7 @@ func uiAssetsJsVendorJquery310MinJs() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "ui/assets/js/vendor/jquery-3.1.0.min.js", size: 86351, mode: os.FileMode(420), modTime: time.Unix(1475109121, 0)}
+	info := bindataFileInfo{name: "ui/assets/js/vendor/jquery-3.1.0.min.js", size: 86351, mode: os.FileMode(420), modTime: time.Unix(1476816463, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -614,7 +551,7 @@ func uiViewsIndexHtml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "ui/views/index.html", size: 61, mode: os.FileMode(420), modTime: time.Unix(1480115628, 0)}
+	info := bindataFileInfo{name: "ui/views/index.html", size: 61, mode: os.FileMode(420), modTime: time.Unix(1481222475, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -634,7 +571,7 @@ func uiViewsKube_resourcesHtml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "ui/views/kube_resources.html", size: 671, mode: os.FileMode(420), modTime: time.Unix(1480292569, 0)}
+	info := bindataFileInfo{name: "ui/views/kube_resources.html", size: 671, mode: os.FileMode(420), modTime: time.Unix(1481222475, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -654,7 +591,7 @@ func uiViewsLayoutsLayoutHtml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "ui/views/layouts/layout.html", size: 2383, mode: os.FileMode(420), modTime: time.Unix(1480284685, 0)}
+	info := bindataFileInfo{name: "ui/views/layouts/layout.html", size: 2383, mode: os.FileMode(420), modTime: time.Unix(1481222475, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -674,7 +611,7 @@ func uiViewsLoginHtml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "ui/views/login.html", size: 676, mode: os.FileMode(420), modTime: time.Unix(1480289152, 0)}
+	info := bindataFileInfo{name: "ui/views/login.html", size: 676, mode: os.FileMode(420), modTime: time.Unix(1481222475, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -694,7 +631,7 @@ func uiViewsNewHtml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "ui/views/new.html", size: 2772, mode: os.FileMode(420), modTime: time.Unix(1475100938, 0)}
+	info := bindataFileInfo{name: "ui/views/new.html", size: 2772, mode: os.FileMode(420), modTime: time.Unix(1476816463, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -714,7 +651,7 @@ func uiViewsPartialsItem_listHtml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "ui/views/partials/item_list.html", size: 5174, mode: os.FileMode(420), modTime: time.Unix(1480288594, 0)}
+	info := bindataFileInfo{name: "ui/views/partials/item_list.html", size: 5174, mode: os.FileMode(420), modTime: time.Unix(1481222475, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -734,7 +671,7 @@ func uiViewsShowHtml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "ui/views/show.html", size: 556, mode: os.FileMode(420), modTime: time.Unix(1480289370, 0)}
+	info := bindataFileInfo{name: "ui/views/show.html", size: 556, mode: os.FileMode(420), modTime: time.Unix(1481222475, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -798,13 +735,10 @@ var _bindata = map[string]func() (*asset, error){
 	"config/providers/digitalocean/minion.yaml": configProvidersDigitaloceanMinionYaml,
 	"config/providers/openstack/master.yaml": configProvidersOpenstackMasterYaml,
 	"config/providers/openstack/minion.yaml": configProvidersOpenstackMinionYaml,
-	"ui/assets/.DS_Store": uiAssetsDs_store,
 	"ui/assets/css/main.css": uiAssetsCssMainCss,
-	"ui/assets/fonts/.DS_Store": uiAssetsFontsDs_store,
 	"ui/assets/fonts/Montserrat-Regular.ttf": uiAssetsFontsMontserratRegularTtf,
 	"ui/assets/fonts/OpenSans-Regular.ttf": uiAssetsFontsOpensansRegularTtf,
 	"ui/assets/fonts/OpenSans-Semibold.ttf": uiAssetsFontsOpensansSemiboldTtf,
-	"ui/assets/img/.DS_Store": uiAssetsImgDs_store,
 	"ui/assets/img/dropdown-caret.svg": uiAssetsImgDropdownCaretSvg,
 	"ui/assets/img/favicon.ico": uiAssetsImgFaviconIco,
 	"ui/assets/img/magnifier.svg": uiAssetsImgMagnifierSvg,
@@ -884,18 +818,15 @@ var _bintree = &bintree{nil, map[string]*bintree{
 	}},
 	"ui": &bintree{nil, map[string]*bintree{
 		"assets": &bintree{nil, map[string]*bintree{
-			".DS_Store": &bintree{uiAssetsDs_store, map[string]*bintree{}},
 			"css": &bintree{nil, map[string]*bintree{
 				"main.css": &bintree{uiAssetsCssMainCss, map[string]*bintree{}},
 			}},
 			"fonts": &bintree{nil, map[string]*bintree{
-				".DS_Store": &bintree{uiAssetsFontsDs_store, map[string]*bintree{}},
 				"Montserrat-Regular.ttf": &bintree{uiAssetsFontsMontserratRegularTtf, map[string]*bintree{}},
 				"OpenSans-Regular.ttf": &bintree{uiAssetsFontsOpensansRegularTtf, map[string]*bintree{}},
 				"OpenSans-Semibold.ttf": &bintree{uiAssetsFontsOpensansSemiboldTtf, map[string]*bintree{}},
 			}},
 			"img": &bintree{nil, map[string]*bintree{
-				".DS_Store": &bintree{uiAssetsImgDs_store, map[string]*bintree{}},
 				"dropdown-caret.svg": &bintree{uiAssetsImgDropdownCaretSvg, map[string]*bintree{}},
 				"favicon.ico": &bintree{uiAssetsImgFaviconIco, map[string]*bintree{}},
 				"magnifier.svg": &bintree{uiAssetsImgMagnifierSvg, map[string]*bintree{}},
