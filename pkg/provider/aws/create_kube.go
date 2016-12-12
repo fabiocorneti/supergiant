@@ -81,42 +81,46 @@ func (p *Provider) CreateKube(m *model.Kube, action *core.Action) error {
 
 	procedure.AddStep("preparing IAM Role kubernetes-master", func() error {
 		policy := `{
-				"Version": "2012-10-17",
-				"Statement": [
-					{
-						"Action": "sts:AssumeRole",
-						"Principal": {"AWS": "*"},
-						"Effect": "Allow",
-						"Sid": ""
-					}
-				]
-			}`
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": { "Service": "ec2.amazonaws.com"},
+      "Action": "sts:AssumeRole"
+    }
+  ]
+}`
 		return createIAMRole(iamS, "kubernetes-master", policy)
 	})
 
 	procedure.AddStep("preparing IAM Role Policy kubernetes-master", func() error {
 		policy := `{
-				"Version": "2012-10-17",
-				"Statement": [
-					{
-						"Effect": "Allow",
-						"Action": ["ec2:*"],
-						"Resource": ["*"]
-					},
-					{
-						"Effect": "Allow",
-						"Action": ["elasticloadbalancing:*"],
-						"Resource": ["*"]
-					},
-					{
-						"Effect": "Allow",
-						"Action": "s3:*",
-						"Resource": [
-							"arn:aws:s3:::kubernetes-*/*"
-						]
-					}
-				]
-			}`
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": ["ec2:*"],
+      "Resource": ["*"]
+    },
+    {
+      "Effect": "Allow",
+      "Action": ["elasticloadbalancing:*"],
+      "Resource": ["*"]
+    },
+    {
+      "Effect": "Allow",
+      "Action": ["route53:*"],
+      "Resource": ["*"]
+    },
+    {
+      "Effect": "Allow",
+      "Action": "s3:*",
+      "Resource": [
+        "arn:aws:s3:::kubernetes-*"
+      ]
+    }
+  ]
+}`
 		return createIAMRolePolicy(iamS, "kubernetes-master", policy)
 	})
 
@@ -126,47 +130,64 @@ func (p *Provider) CreateKube(m *model.Kube, action *core.Action) error {
 
 	procedure.AddStep("preparing IAM Role kubernetes-minion", func() error {
 		policy := `{
-				"Version": "2012-10-17",
-				"Statement": [
-					{
-						"Action": "sts:AssumeRole",
-						"Principal": {"AWS": "*"},
-						"Effect": "Allow",
-						"Sid": ""
-					}
-				]
-			}`
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": { "Service": "ec2.amazonaws.com"},
+      "Action": "sts:AssumeRole"
+    }
+  ]
+}`
 		return createIAMRole(iamS, "kubernetes-minion", policy)
 	})
 
 	procedure.AddStep("preparing IAM Role Policy kubernetes-minion", func() error {
 		policy := `{
-				"Version": "2012-10-17",
-				"Statement": [
-					{
-						"Effect": "Allow",
-						"Action": "s3:*",
-						"Resource": [
-							"arn:aws:s3:::kubernetes-*"
-						]
-					},
-					{
-						"Effect": "Allow",
-						"Action": "ec2:Describe*",
-						"Resource": "*"
-					},
-					{
-						"Effect": "Allow",
-						"Action": "ec2:AttachVolume",
-						"Resource": "*"
-					},
-					{
-						"Effect": "Allow",
-						"Action": "ec2:DetachVolume",
-						"Resource": "*"
-					}
-				]
-			}`
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "s3:*",
+      "Resource": [
+        "arn:aws:s3:::kubernetes-*"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": "ec2:Describe*",
+      "Resource": "*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": "ec2:AttachVolume",
+      "Resource": "*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": "ec2:DetachVolume",
+      "Resource": "*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": ["route53:*"],
+      "Resource": ["*"]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "ecr:GetAuthorizationToken",
+        "ecr:BatchCheckLayerAvailability",
+        "ecr:GetDownloadUrlForLayer",
+        "ecr:GetRepositoryPolicy",
+        "ecr:DescribeRepositories",
+        "ecr:ListImages",
+        "ecr:BatchGetImage"
+      ],
+      "Resource": "*"
+    }
+  ]
+}`
 		return createIAMRolePolicy(iamS, "kubernetes-minion", policy)
 	})
 

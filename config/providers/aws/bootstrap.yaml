@@ -1,6 +1,5 @@
 #cloud-config
 
-hostname: "{{ .Name }}-master"
 ssh_authorized_keys:
   - "{{ .AWSConfig.SSHPubKey }}"
 write_files:
